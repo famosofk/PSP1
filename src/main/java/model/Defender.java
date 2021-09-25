@@ -14,9 +14,9 @@ public class Defender extends Player {
     }
 
     /**
-     * Complexidade 4: Na linha 24, temos uma chamada de map. Corresponde a utilização de um for para criação de uma lista
+     * Complexidade 3: Na linha 24, temos uma chamada de map. Corresponde a utilização de um for para criação de uma lista
      * com o atributo distance. +1 ponto de complexidade
-     * Na linha 25, temos uma chamada de ordenação dessa lista. +1
+     * Na linha 25, temos uma chamada de ordenação dessa lista, porém não contaremos, pois ela não altera o fluxo.
      * Na linha 27, temos um if +1
      */
     public static int getLastManDistance(List<Defender> defenderList) {
