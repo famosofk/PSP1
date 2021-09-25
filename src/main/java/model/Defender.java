@@ -32,12 +32,11 @@ public class Defender extends Player {
     }
 
     /**
-     * Na linha 40, temos um split que corresponde a for, pois é uma aplicação de regex. +1
-     * Na linha 41, temos um for. +1. Complexidade total: 3.
+     * Na linha 40, temos um for. +1. Complexidade total: 2.
      */
     public static List<Defender> create(String line) {
         List<Defender> list = new ArrayList<>();
-        String[] players = line.split(" "); // +1
+        String[] players = line.split(" ");
         Arrays.stream(players).forEach(x -> list.add(  //+1
                         new Defender(Integer.parseInt(x))
                 )
